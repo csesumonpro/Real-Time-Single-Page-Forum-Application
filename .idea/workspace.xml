@@ -3,11 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="cb50a64b-ec87-40f3-b235-8595129bb276" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Model/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Model/Category.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Model/Like.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Model/Like.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Model/Question.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Model/Question.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Model/Reply.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Model/Reply.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/CategoryFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/CategoryFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/LikeFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/LikeFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/QuestionFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/QuestionFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/ReplyFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/ReplyFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_10_12_201238_create_replies_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_10_12_201238_create_replies_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_10_12_201414_create_likes_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_10_12_201414_create_likes_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -152,7 +154,7 @@
       <option name="presentableId" value="Default" />
       <updated>1570910233422</updated>
       <workItem from="1570910234798" duration="1104000" />
-      <workItem from="1570960440672" duration="2465000" />
+      <workItem from="1570960440672" duration="4622000" />
     </task>
     <servers />
   </component>
