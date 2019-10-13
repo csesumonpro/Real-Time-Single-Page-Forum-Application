@@ -2,10 +2,10 @@
 
 /** @var \Illuminate\Database\Eloquent\Factory $factory */
 
-use App\Model\Replay;
+use App\Model\Reply;
 use Faker\Generator as Faker;
 
-$factory->define(Replay::class, function (Faker $faker) {
+$factory->define(Reply::class, function (Faker $faker) {
     return [
         //
     ];

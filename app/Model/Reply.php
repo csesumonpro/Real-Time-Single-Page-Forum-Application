@@ -4,7 +4,7 @@ namespace App\Model;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Replay extends Model
+class Reply extends Model
 {
     protected $guarded = [];
 }
