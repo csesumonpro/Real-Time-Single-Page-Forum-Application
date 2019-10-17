@@ -7,6 +7,11 @@ use Illuminate\Database\Eloquent\Model;
 
 class Question extends Model
 {
+    public function getRouteKeyName()
+    {
+        return 'slug'; // TODO: Change the slug to id if need
+    }
+
     protected $guarded = [];
 
     public function category(){
