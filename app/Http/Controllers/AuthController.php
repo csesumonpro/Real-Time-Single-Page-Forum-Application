@@ -2,13 +2,15 @@
 
 namespace App\Http\Controllers;
 
+use App\User;
 use Illuminate\Http\Request;
 
 class AuthController extends Controller
 {
     public function __construct()
     {
-        $this->middleware('auth:api', ['except' => ['login']]);
+//        $this->middleware('auth:api', ['except' => ['login','signup']]);
+        $this->middleware('jwt', ['except' => ['login','signup']]);
     }
 
     /**
@@ -73,5 +75,9 @@ class AuthController extends Controller
             'token_type' => 'bearer',
             'expires_in' => auth()->factory()->getTTL() * 60
         ]);
+    }
+    public function signup(Request $request){
+        User::create($request->all());
+        return $this->login($request);
     }
 }
