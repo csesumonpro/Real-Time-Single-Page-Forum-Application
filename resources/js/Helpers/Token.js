@@ -2,7 +2,7 @@ class Token {
     isValid(token){
         const payload =  this.payload(token);
         if(payload){
-            return payload.iss == 'http://forum.test/api/auth/login' ? true : false
+            return payload.iss == 'http://forum.test/api/auth/signup' || "http://forum.test/api/auth/login" ? true : false
         }
         return false;
 

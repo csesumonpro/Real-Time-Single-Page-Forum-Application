@@ -4,6 +4,7 @@
             <v-text-field
                 v-model="form.email"
                 label="E-mail"
+                type="email"
                 required
             ></v-text-field>
             <v-text-field
@@ -13,6 +14,9 @@
                 required
             ></v-text-field>
             <v-btn color="blue" type="submit">Login</v-btn>
+            <router-link to="/signup">
+                <v-btn color="green" >Signup</v-btn>
+            </router-link>
         </form>
     </v-container>
 </template>
@@ -31,7 +35,14 @@
         methods:{
            login(){
                User.login(this.form);
+               // this.$router.push('forum')
+
            }
+        },
+        mounted() {
+            if (User.loggedIn()){
+                this.$router.push('forum')
+            }
         }
     }
 </script>
