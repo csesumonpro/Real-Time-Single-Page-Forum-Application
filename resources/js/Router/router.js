@@ -8,6 +8,7 @@ import Logout from "../components/Login/Logout";
 import Signup from "../components/Login/Signup";
 import Forum from "../components/forum/Forum";
 import Toolbar from "../components/Toolbar";
+import SingleQuestion from "../components/forum/SingleQuestion";
 
 
 const routes = [
@@ -16,6 +17,7 @@ const routes = [
     { path: '/signup', component: Signup },
     { path: '/forum', component: Forum},
     { path: '/toolbar', component: Toolbar},
+    { path: '/question/:slug', component: SingleQuestion},
 ]
 
 

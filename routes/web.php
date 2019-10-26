@@ -13,3 +13,4 @@
 
 Route::view('/','main');
 Route::view('/{anything}','main');
+Route::view('/{any}/{anything}','main');

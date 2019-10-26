@@ -24,6 +24,7 @@ class Question extends Model
         return $this->hasMany(Reply::class);
     }
     public function getPathAttribute(){
-        return asset("api/question/$this->slug");
+        return "/question/$this->slug";
+//        return asset("api/question/$this->slug"); //fullpath
     }
 }
