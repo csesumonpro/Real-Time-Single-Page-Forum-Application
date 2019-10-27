@@ -4,7 +4,8 @@ require('./bootstrap');
 window.Vue = require('vue');
 import Vue from 'vue'
 import Vuetify from 'vuetify'
-
+import md from 'marked'
+window.md = md
 Vue.use(Vuetify);
 Vue.component('AppHome',require('./components/AppHome.vue').default);
 import User from "./Helpers/User";

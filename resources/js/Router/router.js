@@ -9,6 +9,7 @@ import Signup from "../components/Login/Signup";
 import Forum from "../components/forum/Forum";
 import Toolbar from "../components/Toolbar";
 import SingleQuestion from "../components/forum/SingleQuestion";
+import Ask from "../components/forum/Ask";
 
 
 const routes = [
@@ -18,6 +19,8 @@ const routes = [
     { path: '/forum', component: Forum},
     { path: '/toolbar', component: Toolbar},
     { path: '/question/:slug', component: SingleQuestion},
+    { path: '/ask', component: Ask},
+
 ]
 
 

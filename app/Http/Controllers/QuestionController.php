@@ -33,10 +33,8 @@ class QuestionController extends Controller
      */
     public function store(Request $request)
     {
-//        auth()->user()->questions($request->all());
-        $request['slug'] = Str::slug($request->name);
-        Question::create($request->all());
-        return response('Created',Response::HTTP_CREATED);
+        $question = auth()->user()->questions()->create($request->all());
+        return response(new QuestionResource($question),Response::HTTP_CREATED);
     }
 
     /**
@@ -60,7 +58,7 @@ class QuestionController extends Controller
      */
     public function update(Request $request, Question $question)
     {
-        $request['slug'] = Str::slug($request->name);
+
         $question->update($request->all());
         return response('Update',Response::HTTP_ACCEPTED);
     }

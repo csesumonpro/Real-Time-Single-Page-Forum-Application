@@ -43,6 +43,9 @@ class User{
         }
         return false
     }
+    own(id){
+        return this.id()==id;
+    }
 }
 
 export default User =  new User();

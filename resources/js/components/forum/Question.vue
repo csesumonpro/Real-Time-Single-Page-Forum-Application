@@ -12,8 +12,8 @@
                 </div>
             </div>
         </v-card-title>
-        <v-card-text>
-            {{data.body}}
+        <v-card-text v-html="body">
+
         </v-card-text>
 
     </v-card>
@@ -23,7 +23,12 @@
 <script>
     export default {
         name: "Question",
-        props:['data']
+        props:['data'],
+        computed:{
+            body(){
+                return md.parse(this.data.body)
+            }
+        }
     }
 </script>
 
