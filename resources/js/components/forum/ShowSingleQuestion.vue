@@ -1,5 +1,5 @@
 <template>
-    <v-card>
+    <v-card >
         <v-container>
             <v-card-title primary-title>
                 <div>

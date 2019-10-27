@@ -10,7 +10,7 @@ import Forum from "../components/forum/Forum";
 import Toolbar from "../components/Toolbar";
 import SingleQuestion from "../components/forum/SingleQuestion";
 import Ask from "../components/forum/Ask";
-
+import createCategory from "../components/category/createCategory";
 
 const routes = [
     { path: '/login', component: Login },
@@ -20,11 +20,9 @@ const routes = [
     { path: '/toolbar', component: Toolbar},
     { path: '/question/:slug', component: SingleQuestion},
     { path: '/ask', component: Ask},
+    { path: '/category', component: createCategory},
 
 ]
-
-
-
 
 const router = new VueRouter({
     routes, // short for `routes: routes`

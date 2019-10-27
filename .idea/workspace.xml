@@ -3,21 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="cb50a64b-ec87-40f3-b235-8595129bb276" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CategoryController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/QuestionController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/QuestionController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Resources/QuestionResource.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Resources/QuestionResource.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Model/Question.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Model/Question.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Resources/CategoryResource.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Resources/CategoryResource.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/Helpers/User.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Helpers/User.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/Router/router.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Router/router.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/bootstrap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/Toolbar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/Toolbar.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/forum/Ask.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/forum/Ask.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/forum/Forum.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/forum/Forum.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/components/forum/Question.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/forum/Question.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/components/forum/ShowSingleQuestion.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/forum/ShowSingleQuestion.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/forum/SingleQuestion.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/forum/SingleQuestion.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/main.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/main.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -190,7 +184,7 @@
       <workItem from="1571854520680" duration="5989000" />
       <workItem from="1572118636681" duration="3065000" />
       <workItem from="1572168863976" duration="12005000" />
-      <workItem from="1572199259943" duration="4350000" />
+      <workItem from="1572199259943" duration="15646000" />
     </task>
     <servers />
   </component>

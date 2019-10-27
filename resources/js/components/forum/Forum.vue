@@ -8,19 +8,19 @@
                ></question>
             </v-flex>
             <v-flex xs4>
-                Sidebar
+               <app-sidebar></app-sidebar>
             </v-flex>
-
         </v-layout>
     </v-container>
 </template>
 
 <script>
     import Question from "./Question";
+    import AppSidebar from "./AppSidebar";
     export default {
         name: "Forum",
         components:{
-            Question
+            Question,AppSidebar
         },
         data(){
           return {

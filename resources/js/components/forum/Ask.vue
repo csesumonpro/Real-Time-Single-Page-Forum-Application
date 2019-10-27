@@ -5,18 +5,23 @@
                 v-model="form.title"
                 label="Title"
                 type="text"
-                required
+
             ></v-text-field>
+            <span v-if="errors.title" class="red--text">{{errors.title['0']}}</span>
             <v-select
                 v-model="form.category_id"
                 label="Category"
                 :items="categories"
                 item-text="name"
                 item-value="id"
-                required
+
             >
             </v-select>
+            <span v-if="errors.category_id" class="red--text">{{errors.category_id['0']}}</span>
             <vue-simplemde v-model="form.body"  />
+           <div v-if="errors.body">
+               <span  class="red--text">{{errors.body['0']}}</span>
+           </div>
             <v-btn color="blue" type="submit">Create</v-btn>
 
         </form>
@@ -48,7 +53,7 @@
                         this.$router.push(res.data.path)
                     })
                     .catch(err=>{
-                        this.errors = err.response.data
+                        this.errors = err.response.data.errors
                     })
             },
             getCategory(){
