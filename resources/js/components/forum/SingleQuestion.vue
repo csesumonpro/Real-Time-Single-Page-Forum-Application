@@ -11,16 +11,22 @@
              :question="question"
          >
          </show-single-question>
+     <v-container>
+         <replies :replies="question.replies" :questionSlug="question.slug"></replies>
+         <create-reply :questionSlug="question.slug"></create-reply>
+     </v-container>
 
   </div>
 </template>
 <script>
     import EditQuestion from "./EditQuestion";
     import ShowSingleQuestion from "./ShowSingleQuestion";
+    import Replies from "../reply/Replies";
+    import createReply from "../reply/createReply";
     export default {
         name: "SingleQuestion",
         components:{
-            ShowSingleQuestion,EditQuestion
+            ShowSingleQuestion,EditQuestion,Replies,createReply
         },
         data(){
             return{

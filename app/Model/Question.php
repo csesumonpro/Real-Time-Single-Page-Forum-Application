@@ -18,6 +18,7 @@ class Question extends Model
             $question->slug = Str::slug($question->title);
         });
     }
+//    protected $with = ['replies'];
     public function getRouteKeyName()
     {
         return 'slug'; // TODO: Change the slug to id if need
@@ -32,7 +33,7 @@ class Question extends Model
         return $this->belongsTo(User::class);
     }
     public function replies(){
-        return $this->hasMany(Reply::class);
+        return $this->hasMany(Reply::class)->latest();
     }
     public function getPathAttribute(){
         return "/question/$this->slug";

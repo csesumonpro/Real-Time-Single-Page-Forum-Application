@@ -11,7 +11,7 @@
                     </div>
                 </div>
                 <v-spacer></v-spacer>
-                <v-btn color="teal">49 Replies</v-btn>
+                <v-btn color="teal">{{question.reply_count}} Replies</v-btn>
             </v-card-title>
 
             <v-card-text v-html="body"> </v-card-text>

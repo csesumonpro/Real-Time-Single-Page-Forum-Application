@@ -21,6 +21,8 @@ class QuestionResource extends JsonResource
             'user'=>$this->user->name,
             'user_id'=>$this->user_id,
             'slug'=>$this->slug,
+            'replies'=>ReplyResource::collection($this->replies),
+            'reply_count'=>$this->replies->count(),
             'created_at'=>$this->created_at->diffForHumans(),
         ];
     }
