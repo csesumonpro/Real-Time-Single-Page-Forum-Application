@@ -20,6 +20,8 @@ class ReplyResource extends JsonResource
             'user'=>$this->user->name,
             'user_id'=>$this->user_id,
             'question_slug'=>$this->question->slug,
+            'liked'=>$this->likes()->where('user_id',auth()->id())->count(),
+            'like_count'=>$this->likes->count(),
             'created_at'=>$this->created_at->diffForHUmans()
         ];
     }

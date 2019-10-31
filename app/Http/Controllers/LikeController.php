@@ -14,12 +14,12 @@ class LikeController extends Controller
     }
    public function likeIt(Reply $reply){
         $reply->likes()->create([
-//            'user_id'=>auth()->id,
-            'user_id'=>'1'
+            'user_id'=>auth()->id(),
+//            'user_id'=>'1'
         ]);
    }
    public function unLikeIt(Reply $reply){
-//        $reply->likes()->whereUserId(auth()->id)->delete();
-        $reply->likes()->whereUserId(1)->delete();
+        $reply->likes()->whereUserId(auth()->id())->delete();
+//        $reply->likes()->whereUserId(1)->delete();
    }
 }
