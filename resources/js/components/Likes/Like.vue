@@ -1,6 +1,6 @@
 <template>
     <div>
-        <v-btn @click.prevent="likeIt">
+        <v-btn icon @click.prevent="likeIt">
             <v-icon :color="color">favorite</v-icon>{{count}}
         </v-btn>
     </div>
