@@ -41,6 +41,14 @@
             color(){
                return  this.liked ? 'red' : 'red lighten-4';
             }
+        },
+        created(){
+            Echo.channel('likeChannel')
+                .listen('LikeEvent', (e) => {
+                    if(e.id==this.data.id){
+                        e.type==1 ? this.count++ : this.count--
+                    }
+                });
         }
     }
 </script>
